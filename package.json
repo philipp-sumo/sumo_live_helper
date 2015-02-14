@@ -1,0 +1,106 @@
+{
+    "name": "sumo_live_helper", 
+    "license": "GPL 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)", 
+    "author": "philipp", 
+    "version": "0.1", 
+    "fullName": "SUMO Live Helper",
+    "icon": "./data/icon-32.png",
+    "icon64": "./data/icon-64.png",
+    "id": "sumolivehelper@sumo", 
+    "preferences": [
+        {
+            "type": "bool",
+            "name": "notify_involved",
+            "value": true,
+            "title": "Alert me when there's an update in a question where I've been involved in before"
+        },
+        {
+            "type": "bool",
+            "name": "notify_keywords",
+            "value": false,
+            "title": "Alert me when a question contains certain keywords"
+        },
+        {
+            "description": "Case insensitive, separate with '|'",
+            "type": "string",
+            "name": "keywords",
+            "value": "keyword1|keyword2",
+            "title": "Keywords to look for:"
+        },
+        {
+            "type": "bool",
+            "name": "notify_opentab",
+            "value": false,
+            "title": "Open alerts in a new tab"
+        },
+        {
+            "type": "bool",
+            "name": "watch_en",
+            "value": true,
+            "title": "Look out for new questions in English"
+        },
+        {
+            "type": "bool",
+            "name": "watch_es",
+            "value": false,
+            "title": "Look out for new questions in Español"
+        },
+        {
+            "type": "bool",
+            "name": "watch_pt",
+            "value": false,
+            "title": "Look out for new questions in Português (do Brasil)"
+        },
+        {
+            "type": "bool",
+            "name": "watch_firefox",
+            "value": true,
+            "title": "Include Firefox questions"
+        },
+        {
+            "type": "bool",
+            "name": "watch_mobile",
+            "value": true,
+            "title": "Include Firefox for Android questions"
+        },
+        {
+            "type": "bool",
+            "name": "watch_firefoxos",
+            "value": true,
+            "title": "Include Firefox OS questions"
+        },
+        {
+            "type": "bool",
+            "name": "watch_thunderbird",
+            "value": true,
+            "title": "Include Thunderbird questions"
+        },
+        {
+            "type": "bool",
+            "name": "watch_webmaker",
+            "value": true,
+            "title": "Include Webmaker questions"
+        },
+        {
+            "name": "polling",
+            "type": "menulist",
+            "title": "Polling interval",
+            "value": 15,
+            "description": "Determines how often SUMO will be queried to receive updates.",
+            "options": [
+                {
+                    "value": "5",
+                    "label": "5 minutes"
+                },
+                {
+                    "value": "15",
+                    "label": "15 minutes"
+                },
+                {
+                    "value": "30",
+                    "label": "half an hour"
+                }
+            ]
+        }
+    ]
+}
