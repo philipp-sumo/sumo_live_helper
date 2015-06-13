@@ -1,4 +1,4 @@
-sumo_live_moderation
+sumo_live_helper
 ====================
 
 Helper addon for forum contributors:
